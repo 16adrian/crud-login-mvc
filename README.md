@@ -16,33 +16,33 @@
 
 ---
 
-## 📑 Índice
+## Índice
 
-- [Descripción](#-descripción)
-- [Objetivo](#-objetivo)
-- [Estado del proyecto](#-estado-del-proyecto)
-- [Funcionalidades](#-funcionalidades)
-- [Capturas de pantalla](#-capturas-de-pantalla)
-- [Tecnologías utilizadas](#-tecnologías-utilizadas)
-- [Requisitos previos](#-requisitos-previos)
-- [Instalación y ejecución](#-instalación-y-ejecución)
-- [Variables de entorno](#-variables-de-entorno)
-- [Base de datos](#-base-de-datos)
-- [Usuario de prueba](#-usuario-de-prueba)
-- [Cómo funciona el Login](#-cómo-funciona-el-login)
-- [Rutas protegidas](#-rutas-protegidas)
-- [Cómo funciona el CRUD](#-cómo-funciona-el-crud)
-- [Endpoints de la API](#-endpoints-de-la-api)
-- [Arquitectura MVC](#-arquitectura-mvc)
-- [Estructura del proyecto](#-estructura-del-proyecto)
-- [Nota de seguridad sobre MD5](#-nota-de-seguridad-sobre-md5)
-- [Video demostrativo](#-video-demostrativo)
-- [Autor](#-autor)
-- [Información adicional](#-información-adicional)
+- [Descripción](#descripción)
+- [Objetivo](#objetivo)
+- [Estado del proyecto](#estado-del-proyecto)
+- [Funcionalidades](#funcionalidades)
+- [Capturas de pantalla](#capturas-de-pantalla)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Requisitos previos](#requisitos-previos)
+- [Instalación y ejecución](#instalación-y-ejecución)
+- [Variables de entorno](#variables-de-entorno)
+- [Base de datos](#base-de-datos)
+- [Usuario de prueba](#usuario-de-prueba)
+- [Cómo funciona el Login](#cómo-funciona-el-login)
+- [Rutas protegidas](#rutas-protegidas)
+- [Cómo funciona el CRUD](#cómo-funciona-el-crud)
+- [Endpoints de la API](#endpoints-de-la-api)
+- [Arquitectura MVC](#arquitectura-mvc)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Nota de seguridad sobre MD5](#nota-de-seguridad-sobre-md5)
+- [Video demostrativo](#video-demostrativo)
+- [Autor](#autor)
+- [Información adicional](#información-adicional)
 
 ---
 
-## 📝 Descripción
+## Descripción
 
 Este proyecto es una aplicación web que funciona **localmente** y permite:
 
@@ -51,7 +51,7 @@ Este proyecto es una aplicación web que funciona **localmente** y permite:
 
 El **backend** está hecho con **Express.js** y organizado con el patrón **MVC** (Model - View - Controller). El **frontend** está hecho con **React** y se comunica con el backend mediante peticiones HTTP en formato JSON.
 
-## 🎯 Objetivo
+## Objetivo
 
 Desarrollar una aplicación con **CRUD y Login** siguiendo el patrón **MVC**, que demuestre:
 
@@ -61,11 +61,11 @@ Desarrollar una aplicación con **CRUD y Login** siguiendo el patrón **MVC**, q
 
 Proyecto académico de la materia **Ingeniería Web**.
 
-## 🚦 Estado del proyecto
+## Estado del proyecto
 
 ✅ **Terminado.** Todas las funcionalidades fueron implementadas y probadas localmente.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - 🔐 **Login** con usuario y contraseña, con mensajes de error claros.
 - 🚪 **Logout** que destruye la sesión en el servidor.
@@ -78,7 +78,7 @@ Proyecto académico de la materia **Ingeniería Web**.
 - 💬 **Mensajes** de éxito (verde) y de error (rojo).
 - ↩️ Después de iniciar sesión, el usuario vuelve a la página protegida que intentaba abrir.
 
-## 📸 Capturas de pantalla
+## Capturas de pantalla
 
 | Login | Lista de productos |
 |---|---|
@@ -88,7 +88,7 @@ Proyecto académico de la materia **Ingeniería Web**.
 |---|---|
 | ![Formulario para crear o editar un producto](docs/capturas/formulario.png) | ![Login mostrando el mensaje "Necesitas iniciar sesión"](docs/capturas/ruta-protegida.png) |
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 ### Backend
 
@@ -116,13 +116,13 @@ Proyecto académico de la materia **Ingeniería Web**.
 |---|---|
 | [SQLite](https://www.sqlite.org/) | Base de datos local guardada en un solo archivo |
 
-## 📋 Requisitos previos
+## Requisitos previos
 
 - [Node.js](https://nodejs.org/) versión **LTS** (el proyecto se desarrolló con Node.js 24).
 - [Git](https://git-scm.com/) (para clonar el repositorio).
 - Un navegador web (Firefox, Chrome, Edge…).
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 > Los comandos están pensados para la terminal **CMD** de Windows.
 
@@ -189,7 +189,7 @@ Entra en el navegador a: **http://localhost:5173**
 | `backend` | `npm run db:init` | Crea las tablas, el usuario de prueba y los productos de ejemplo |
 | `frontend` | `npm run dev` | Enciende React en el puerto 5173 |
 
-## 🔑 Variables de entorno
+## Variables de entorno
 
 El archivo `backend/.env` **no se sube a GitHub** porque contiene información secreta. En su lugar se incluye la plantilla `backend/.env.example`.
 
@@ -198,7 +198,7 @@ El archivo `backend/.env` **no se sube a GitHub** porque contiene información s
 | `PORT` | Puerto del servidor Express | `3000` |
 | `SESSION_SECRET` | Frase secreta para firmar la cookie de sesión | Una cadena larga y aleatoria |
 
-## 🗄️ Base de datos
+## Base de datos
 
 Se usa **SQLite**: toda la base de datos vive en el archivo `backend/database/database.sqlite`, que se crea con `npm run db:init` y **no se sube a GitHub**. Las tablas están definidas en `backend/database/schema.sql`.
 
@@ -229,7 +229,7 @@ Se usa **SQLite**: toda la base de datos vive en el archivo `backend/database/da
 2. Borra el archivo `backend/database/database.sqlite`.
 3. Ejecuta `npm run db:init` dentro de `backend`.
 
-## 👤 Usuario de prueba
+## Usuario de prueba
 
 | Usuario | Contraseña |
 |---|---|
@@ -237,7 +237,7 @@ Se usa **SQLite**: toda la base de datos vive en el archivo `backend/database/da
 
 En la base de datos, la contraseña queda guardada como `0192023a7bbd73250516f069df18b500` (su hash MD5).
 
-## 🔐 Cómo funciona el Login
+## Cómo funciona el Login
 
 1. El usuario escribe su usuario y contraseña en la página `/login` y presiona **Iniciar sesión**.
 2. React envía `POST /api/auth/login` con los datos en formato JSON.
@@ -251,7 +251,7 @@ En la base de datos, la contraseña queda guardada como `0192023a7bbd73250516f06
 
 **Cerrar sesión:** `POST /api/auth/logout` destruye la sesión en el servidor y borra la cookie.
 
-## 🛡️ Rutas protegidas
+## Rutas protegidas
 
 La protección se implementa en **dos niveles**:
 
@@ -273,7 +273,7 @@ La protección del frontend mejora la experiencia del usuario; **la seguridad re
 
 **¿Por qué una URL copiada deja de funcionar después de cerrar sesión?** Porque la URL no da acceso por sí misma: el acceso depende de la sesión del servidor. Al cerrar sesión, la sesión se destruye; al pegar la URL, React consulta `GET /api/auth/me`, el backend responde `401` y la aplicación redirige al Login.
 
-## 📦 Cómo funciona el CRUD
+## Cómo funciona el CRUD
 
 | Operación | En la aplicación | Petición al backend |
 |---|---|---|
@@ -288,7 +288,7 @@ La protección del frontend mejora la experiencia del usuario; **la seguridad re
 - El precio es obligatorio, debe ser un número y no puede ser negativo.
 - El stock es opcional (si se deja vacío vale 0), debe ser un número entero y no puede ser negativo.
 
-## 🔌 Endpoints de la API
+## Endpoints de la API
 
 | Método | Ruta | Descripción | ¿Requiere sesión? |
 |---|---|---|---|
@@ -304,7 +304,7 @@ La protección del frontend mejora la experiencia del usuario; **la seguridad re
 
 **Códigos de respuesta usados:** `200` (correcto), `201` (creado), `400` (datos inválidos), `401` (no autenticado), `404` (no encontrado), `500` (error del servidor).
 
-## 🏛️ Arquitectura MVC
+## Arquitectura MVC
 
 ```text
 React (View)
@@ -322,7 +322,7 @@ Express → Route → Middleware (requireAuth) → Controller → Model → SQLi
 | **Route** | `backend/routes/` | Asocia cada URL y método HTTP con una función del Controller |
 | **Middleware** | `backend/middlewares/` | Revisa la petición antes del Controller (sesión) y maneja los errores |
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```text
 crud-login-mvc/
@@ -375,22 +375,26 @@ crud-login-mvc/
 └── README.md
 ```
 
-## ⚠️ Nota de seguridad sobre MD5
+## Nota de seguridad sobre MD5
 
 La tarea solicita expresamente almacenar las contraseñas con **MD5**, y así se implementó (`backend/utils/md5.js`).
 
 Sin embargo, **MD5 no se recomienda para contraseñas en sistemas reales**: es un algoritmo muy rápido, lo que permite probar miles de millones de combinaciones por segundo, y existen tablas públicas con los hashes de contraseñas comunes. En aplicaciones reales se deben usar algoritmos diseñados para contraseñas, como **bcrypt** o **Argon2**, que son lentos a propósito y usan una "sal" distinta para cada usuario.
 
-## 🎥 Video demostrativo
+## Video demostrativo
 
-Enlace al video: _(pendiente)_
+Video de demostración del funcionamiento del proyecto:
 
-## 👨‍💻 Autor
+[![Ver el video en YouTube](https://img.youtube.com/vi/uy3BjAGAi3M/hqdefault.jpg)](https://www.youtube.com/watch?v=uy3BjAGAi3M)
+
+▶️ **Enlace:** https://www.youtube.com/watch?v=uy3BjAGAi3M
+
+## Autor
 
 | [<img src="https://github.com/16adrian.png" width="100" alt="Foto de perfil de Adrián Morales Quilumba en GitHub"><br><sub>Adrián Morales Quilumba</sub>](https://github.com/16adrian) |
 |:---:|
 
-## ℹ️ Información adicional
+## Información adicional
 
 - Proyecto académico de la materia **Ingeniería Web**, desarrollado únicamente para ejecución **local**.
 - Las sesiones se guardan en la memoria del servidor: si el backend se reinicia, es necesario volver a iniciar sesión.
