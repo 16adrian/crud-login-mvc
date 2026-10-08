@@ -1,0 +1,106 @@
+/* index.css — Estilos de toda la aplicación (sencillos y ordenados) */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+h1, h2 { margin-top: 0; }
+
+/* ---------- Tarjeta centrada (Login y formularios) ---------- */
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.card-wide { max-width: 560px; }
+.subtitle { color: #6b7280; margin: -8px 0 24px; }
+
+/* ---------- Formularios ---------- */
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 6px; }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #2563eb;
+  border-color: transparent;
+}
+.form-actions { display: flex; gap: 8px; justify-content: flex-end; }
+
+/* ---------- Botones ---------- */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn-primary   { background: #2563eb; color: #ffffff; }
+.btn-secondary { background: #e5e7eb; color: #1f2937; }
+.btn-danger    { background: #dc2626; color: #ffffff; }
+.btn-small     { padding: 6px 10px; font-size: 14px; }
+.btn-block     { width: 100%; }
+
+/* ---------- Mensajes (verde = éxito, rojo = error) ---------- */
+.alert { padding: 12px 14px; border-radius: 8px; margin-bottom: 16px; }
+.alert-error   { background: #fee2e2; color: #991b1b; }
+.alert-success { background: #dcfce7; color: #166534; }
+
+/* ---------- Barra superior ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #1f2937;
+  color: #ffffff;
+  padding: 12px 24px;
+}
+
+/* ---------- Pantalla de productos ---------- */
+.container { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e5e7eb; }
+th { background: #f9fafb; font-size: 14px; color: #4b5563; }
+.actions { display: flex; gap: 8px; }
+.empty { text-align: center; padding: 32px; color: #6b7280; }

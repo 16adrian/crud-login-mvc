@@ -1,0 +1,25 @@
+# ============================================
+# Archivos y carpetas que Git NO debe subir
+# ============================================
+
+# Dependencias (se reinstalan con: npm install)
+node_modules/
+
+# Variables de entorno con secretos (¡NUNCA subir!)
+# Nota: .env.example SÍ se sube (es la plantilla sin secretos)
+.env
+
+# Base de datos local (se crea con: npm run db:init)
+*.sqlite
+*.sqlite-journal
+
+# Archivos generados automáticamente
+dist/
+
+# Registros de errores
+*.log
+
+# Archivos del sistema y del editor
+Thumbs.db
+.DS_Store
+.vscode/
